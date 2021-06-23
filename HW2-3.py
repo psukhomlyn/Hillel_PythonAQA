@@ -7,5 +7,5 @@ bingo_blacklist = {'John Smith', 'Adam Silver', 'Erik Dier', 'Marta Adams'}
 poker_blacklist = {'George Washignton', 'Marta Adams', 'Frank Smith', 'John Smith'}
 majong_blacklist = {'John Smith', 'Ben Aflek', 'Marta Adams', 'Marta Williams'}
 
-black_users = bingo_blacklist.intersection(poker_blacklist).intersection(majong_blacklist)
+blacklist_players = bingo_blacklist.intersection(poker_blacklist).intersection(majong_blacklist)
 print(f'People who are in all blacklists are: {black_users}')
