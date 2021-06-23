@@ -3,3 +3,8 @@
 Отобразите это в коде. Учитывайте что люди с одинаковыми именами могут быть в обеих компаниях
 """
 
+global_logic = ['John Dow', 'John Snow', 'Arya Stark']
+toshiba = ['Robin Williams', 'John Snow', 'Taylor Swift']
+
+toshiba.extend(global_logic)
+print(toshiba)
