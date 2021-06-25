@@ -4,3 +4,12 @@
 Если в списке есть 2 джона нужно взять лишь одного из них.
 "John Dow", "John Dow", "Marta Dow" => "John Dow", "Marta Dow")
 """
+
+people = ["John Dow", "John Snow", "Marta Adams", "John Dow", "Marta Stuard", "Marta Stuard"]
+unique_names = []
+
+for name in people:
+    if name not in unique_names:
+        unique_names.append(name)
+
+print(unique_names)
