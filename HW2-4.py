@@ -4,7 +4,7 @@
 Вывести список гостей которые могут есть овощи и зелень.
 """
 
-vegetarians = ["John Dow", "Frank White", "Viky Benks"]
+vegetarians = ["John Dow", "Frank White", "Viky Benky"]
 omnivores = ["Ernie May", "Charlie Black", "Peter Waters"]
 guests = []
 
