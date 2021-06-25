@@ -17,3 +17,5 @@ for omn in omnivores:
     guests.append(omn)  # add omnivores to guests list
 
 print(f'The list of guests who eat vegetables are: {guests}')
+# Good it is also will work but lets look on solution with syntax sugar^
+# print(vegetarians + omnivores)

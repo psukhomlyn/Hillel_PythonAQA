@@ -13,3 +13,5 @@ for name in people:
         unique_names.append(name)
 
 print(unique_names)
+# Good. Interesting solution but it could be done with dicts
+# print(list({}.fromkeys(people).keys()))

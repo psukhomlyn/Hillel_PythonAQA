@@ -10,3 +10,4 @@ toshiba.extend(global_logic)
 global_logic.clear()   # all global_logic employees were moved into toshiba, global_logic has no employees anymore
 print(f'Employees in Toshiba are: {toshiba}')
 print(f'Employees in Global Logic are: {global_logic}')
+# Excelent you first who figure out that global logic employees are toshiba employees after absorbsion. Good job.

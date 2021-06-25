@@ -24,3 +24,7 @@ else:
 
 print(f'Guests list in vip zone is: {vip}')
 print(f'Guests list in common zone is: {common}')
+
+# Good but I think it is over engineered. Nice job but I suppose it will look
+# better if this solution will bemoved into the classes of functions in some
+# functional approach.

@@ -9,3 +9,5 @@ majong_blacklist = {'John Smith', 'Ben Aflek', 'Marta Adams', 'Marta Williams'}
 
 blacklist_players = bingo_blacklist.intersection(poker_blacklist).intersection(majong_blacklist)
 print(f'People who are in all blacklists are: {black_users}')
+# Good. But you can move all set into the intersaction
+# bingo_blacklist.intersection(poker_blacklist, majong_blacklist)
