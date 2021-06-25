@@ -8,12 +8,12 @@ vegetarians = ["John Dow", "Frank White", "Viky Benks"]
 omnivores = ["Ernie May", "Charlie Black", "Peter Waters"]
 guests = []
 
-for veg in vegetarians:
-    guests.append(veg)
-for omn in omnivores:
-    guests.append(omn)
-
-print(f'The list of guests who eat vegetables are: {guests}')
-
 # как я понял задачу нам нужно создать новый список, а не модифицировать уже данные.
 # т.к. люди от этого не перестают быть всеядными и вегетариацами.
+
+for veg in vegetarians:
+    guests.append(veg)  # add vegetarians to guests list
+for omn in omnivores:
+    guests.append(omn)  # add omnivores to guests list
+
+print(f'The list of guests who eat vegetables are: {guests}')
