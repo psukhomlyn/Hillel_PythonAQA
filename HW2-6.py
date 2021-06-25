@@ -5,7 +5,7 @@
 "John Dow", "John Dow", "Marta Dow" => "John Dow", "Marta Dow")
 """
 
-people = ["John Dow", "John Snow", "Marta Adams", "John Dow", "Marta Stuard", "Marta Stuard"]
+people = ["John Dow", "John Adams", "Marta Adams", "John Dow", "Marta Stuard", "Marta Stuard"]
 unique_names = []
 
 for name in people:
