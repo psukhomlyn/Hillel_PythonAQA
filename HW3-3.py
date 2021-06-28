@@ -8,14 +8,6 @@
 friends = ["John", "Marta", "James"]
 enemies = ["John", "Johnatan", "Artur"]
 
-# for friend in friends:
-#     if friend not in enemies:
-#         print(f"{friend} we are the best friends")
-#     elif friend in enemies:
-#         print(f"{friend} we are not the friends anymore")
-#     else:
-#         print('James is the best')
-
 for friend in friends:
     if friend == "James":
         continue  # for skip check for James. James should not be checked according to task description.
