@@ -4,8 +4,12 @@
 """
 
 a = 2
-b = a**2
-c = pow(2, 2)
+print(a*2)
+a *=2
+print(a)
 
-print(b)
+
+c = 2
+print(c/2)
+c /= 2
 print(c)
