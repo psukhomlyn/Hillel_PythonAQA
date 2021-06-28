@@ -4,12 +4,11 @@
 """
 
 a = 2
+
+#multiplication
 print(a*2)
-a *=2
-print(a)
+print(a<<1)
 
-
-c = 2
-print(c/2)
-c /= 2
-print(c)
+#division
+print(a/2)
+print(a>>1)
