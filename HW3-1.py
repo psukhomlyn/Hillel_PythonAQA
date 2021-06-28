@@ -5,9 +5,22 @@
 """
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-even = ()
-odd = ()
-for number in numbers:
-    if numbers.index(number) // 2 == 0
+even_index = []
+odd_index = []
+for digit in numbers:
+    if numbers.index(digit) % 2 == 0:
+        even_index.append((numbers.index(digit), digit))
+    else:
+        odd_index.append((numbers.index(digit), digit))
+
+print(f'Elements on even indexes are: {even_index}')
+print(f'Elements on odd indexes are: {odd_index}')
+
+
+
+
+
+
+
 
 
