@@ -6,9 +6,11 @@
 a = 2
 
 #multiplication
-print(a*2)
-print(a<<1)
+print(a * 2)
+print(a << 1)
 
 #division
-print(a/2)
-print(a>>1)
+print(a / 2)
+print(a >> 1)
+
+# Good but no empty line in the end of file
