@@ -6,7 +6,6 @@
 
 friends = ["John", "Marta", "James", "Amanda", "Marianna"]
 
-print("Names".center(25, '*'))
+print("Names".center(20, '*'))
 for name in friends:
-    formatted_name = name.rjust(25, " ")
-    print(f"{formatted_name}")
+    print(f'{name:>20}')
