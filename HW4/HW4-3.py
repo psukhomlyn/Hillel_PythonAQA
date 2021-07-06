@@ -4,10 +4,17 @@
 """
 
 query = "     name=Amanda=sssss&age=32&&salary=1500&currency=quro                             "
-query_list = []
+params = []
+param_values = []
 query_dict = {}
 query_pairs = query.strip().split('&')
 for pair in query_pairs:
-    pair.split('=', maxsplit=1)
-    print(pair)
-print(query_dict)
+    if pair == '':
+        continue
+    else:
+        param, param_value = pair.split('=', maxsplit=1)
+        params.append(param)
+        param_values.append(param_value)
+
+query_dict = dict(zip(params, param_values))
+print(f'Query string converted to dict is: {query_dict}')
