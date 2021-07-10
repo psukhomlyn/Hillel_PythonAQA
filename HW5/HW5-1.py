@@ -12,10 +12,12 @@
 Древо каталогов создавать скриптом. Пушить в репозиторий только код.
 """
 import random
+import pickle
 
-tuples_list = []
-for t in range(100):
-    tuples_list.append((random.randrange(1, 11), random.randrange(1, 11), random.randrange(1, 4)))
+with open("tuples_list.txt", mode="w") as file:
+    for item in range(100):
+        my_tuple = ((random.randrange(1, 11), random.randrange(1, 11), random.randrange(1, 4)))
+        file.write("\n".join((str(my_tuple))))
 
-print(tuples_list)
+
 
