@@ -12,11 +12,12 @@
 Древо каталогов создавать скриптом. Пушить в репозиторий только код.
 """
 import random
+import os
+import sys
 
-with open("tuples_list.txt", mode="w") as file:
+with open("test/data/tuples_list.txt", mode="w") as file:
     for item in range(100):
         my_tuple = ((random.randrange(1, 101), random.randrange(1, 101), random.randrange(1, 4)))
-        print(my_tuple)
         file.write(str(my_tuple).replace(')', '"\n').replace(',', ' ').replace('(', '"'))
 
 
