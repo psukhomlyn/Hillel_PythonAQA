@@ -12,7 +12,6 @@
 Древо каталогов создавать скриптом. Пушить в репозиторий только код.
 """
 import random
-import pickle
 
 with open("tuples_list.txt", mode="w") as file:
     for item in range(100):
