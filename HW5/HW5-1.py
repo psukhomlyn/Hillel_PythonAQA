@@ -12,8 +12,6 @@
 Древо каталогов создавать скриптом. Пушить в репозиторий только код.
 """
 import random
-import os
-import sys
 
 with open("test/data/tuples_list.txt", mode="w") as file:
     for item in range(100):
