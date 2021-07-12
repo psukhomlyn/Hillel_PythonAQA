@@ -9,12 +9,12 @@ with open("test/data/tuples_list.txt", mode="r") as file:
     #print(file_data.split('\n'))
 rows_list = file_data.split('\n')
 for row in rows_list:
-    row = row.replace('"', '').split("  ")
-    for element in row:
-       if int(row[2]) == 1:
-             result = int(row[0]) + int(row[1])
-       if int(row[2]) == 2:
-             result = int(row[0]) - int(row[1])
-       if int(row[2]) == 3:
-             result = int(row[0]) * int(row[1])
+    row_edited = row.replace('"', '').split("  ")
+    for element in row_edited:
+       if int(row_edited[2]) == 1:
+           result = int(row_edited[0]) + int(row_edited[1])
+       if int(row_edited[2]) == 2:
+           result = int(row_edited[0]) - int(row_edited[1])
+       if int(row_edited[2]) == 3:
+           result = int(row_edited[0]) * int(row_edited[1])
     print(result)
