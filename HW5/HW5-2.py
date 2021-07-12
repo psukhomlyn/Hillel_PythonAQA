@@ -11,10 +11,10 @@ rows_list = file_data.split('\n')
 for row in rows_list:
     row_edited = row.replace('"', '').split("  ")
     for element in row_edited:
-       if int(row_edited[2]) == 1:
+        if int(row_edited[2]) == 1:
            result = int(row_edited[0]) + int(row_edited[1])
-       if int(row_edited[2]) == 2:
+        if int(row_edited[2]) == 2:
            result = int(row_edited[0]) - int(row_edited[1])
-       if int(row_edited[2]) == 3:
+        if int(row_edited[2]) == 3:
            result = int(row_edited[0]) * int(row_edited[1])
     print(result)
