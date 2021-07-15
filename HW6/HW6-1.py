@@ -7,9 +7,20 @@ Not known operation: {operation}. Описать функции в прилож�
 образом что бы все проверки в __main__ блоке task_1 выполнялись корректно.
 НЕ НУЖНО ВЫЗЫВАТЬ ФУНКЦИЮ САМИМ Я ЭТО УЖЕ СДЕЛАЛ В УТВЕРЖДЕНИЯХ "assert"
 """
+from typing import Union
 
-def arithmetic(): ...
 
+def arithmetic(left_operand, right_operand, operation):
+    if operation == '+':
+        return left_operand + right_operand
+    elif operation == '-':
+        return left_operand - right_operand
+    elif operation == '*':
+        return left_operand * right_operand
+    elif operation == '/':
+        return left_operand / right_operand
+    else:
+        return f'Not known operation: {operation}'
 
 
 if __name__ == "__main__":
@@ -24,7 +35,8 @@ if __name__ == "__main__":
         f"{' ' * 4}"""
     )
     assert arithmetic.__code__.co_name == "arithmetic"
-    assert arithmetic.__code__.co_varnames == ("left_operand", "right_operand", "operation")
+    assert arithmetic.__code__.co_varnames == ("left_operand", "right_operand",
+                                               "operation")
     try:
         arithmetic(1, 2, 3)
     except TypeError as e:
