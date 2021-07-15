@@ -3,25 +3,17 @@
 и возвращающую True, если оно простое, и False - иначе.
 """
 
-num = input('Please enter a number: ')
-
-if not num.isdigit():
-    raise ValueError('Entered value should be an integer')
-
-num: int = int(num)
-
 
 def is_prime(x):
-    if x <= 1 or x % 1 > 0:
-        return False
-    for i in range(2, x):
-        if x % i == 0:
-            return False
-    return True
+    if x < 2 or x > 1000:
+        return f'Number is out of range from 2 to 1000'
+    else:
+        if x <= 1 or x % 1 > 0:
+            return f'Entered number is not prime'
+        for i in range(2, x):
+            if x % i == 0:
+                return f'Entered number is not prime'
+        return f'Entered number is prime'
 
 
-# print(is_prime(num))
-if is_prime(num):
-    print(f'{num} is a prime number')
-else:
-    print(f'{num} is not a prime number')
+print(is_prime(71))
