@@ -19,6 +19,7 @@ def is_prime(x):
             return False
     return True
 
+
 # print(is_prime(num))
 if is_prime(num):
     print(f'{num} is a prime number')
