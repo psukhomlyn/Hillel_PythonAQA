@@ -11,3 +11,6 @@ for name in names_list:
     title_names.append(name)
 title_names_str = ' '.join(title_names)
 print(f"Converted names string is: {title_names_str}")
+
+# Good. As alternative it could be solved much easier.
+# print(names.title())

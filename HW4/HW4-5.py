@@ -14,3 +14,5 @@ sentences_count = len(re.findall("\S.*?[.!?](?=\s|$)", text))
 print(f'The are {sentences_count} were found in the text:')
 for sentence in sentences:
     print(f'{sentence}')
+
+# Excellent

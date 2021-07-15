@@ -13,3 +13,10 @@ for word in camel_case:
             word = word.removeprefix('_')
     snake_case.append(word)
 print(f'Converted CamelCase to snake_case is: {snake_case}')
+
+# Interesting solution. As alternative could be solved with regular expression.
+# some_list = ["FirstItem", "FriendsList", "MyTuple"]
+# new_list = []
+
+# for str_ in some_list:
+#     new_list.append(re.sub('(?!^)([A-Z]+)', r'_\1', str_).lower())

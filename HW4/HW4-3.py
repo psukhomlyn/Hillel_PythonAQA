@@ -18,3 +18,13 @@ for pair in query_pairs:
 
 query_dict = dict(zip(params, param_values))
 print(f'Query string converted to dict is: {query_dict}')
+
+# Good. As alternative could be solved in other way.
+# result = dict()
+#
+# for pair in some_string.strip().split('&'):
+#     if pair:
+#         key, value = pair.split('=', maxsplit=1)
+#         result[key] = value
+#
+# print(result)
