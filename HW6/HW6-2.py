@@ -12,3 +12,9 @@ def square(a):
             )
 
 print(square(10))
+print(type(square(10)))
+
+# Interesting solution. It would be nice declare which arguments you expect
+# and what will be returned
+# For now function returns string but should tuple
+# -2 points

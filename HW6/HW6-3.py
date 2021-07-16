@@ -14,4 +14,5 @@ def is_prime(x):
         return f'Entered number is prime'
 
 
-print(is_prime(7))
+print(is_prime(11))
+# Excellent

@@ -1,0 +1,2 @@
+./HW6-1.py:10:1: F401 'typing.Union' imported but unused
+./HW6-2.py:14:1: E305 expected 2 blank lines after class or function definition, found 1
