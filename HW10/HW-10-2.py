@@ -2,6 +2,7 @@
 Создайте класс с описанием работника. Любого работника. Employee.
 """
 
+
 class Employee:
     def __init__(self, name: str, age: int, male: bool, speciality: str):
         self.name = name
