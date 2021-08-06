@@ -16,3 +16,7 @@ Worker: Employee = Employee("John Adams", 25, True, "Smith")
 
 if __name__ == '__main__':
     print(Worker.name, Worker.age, Worker.male, Worker.speciality)
+# Good but I can change name of company from anyware
+# Worker.name = "Elon Mask"
+# You should hide your fields which should not be changed from outside of class -2 points
+# I see state in this class but does not see methods which modify it -2 points
