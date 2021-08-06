@@ -62,3 +62,5 @@ if __name__ == '__main__':
     Racing_Volvo = RacingTruck("red", 2000, 12, "Volvo", 250, 1, 1500, 5, 1200)
     print(Racing_Volvo.color, Racing_Volvo.engine_volume)
     print(Racing_Volvo.weight)
+# Good but I don't see hiding abstraction and incapsulation
+# -6 points
