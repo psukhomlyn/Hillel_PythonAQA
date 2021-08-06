@@ -31,6 +31,10 @@ class Truck(Car):
     def drive_forward(self):
         print("Truck is driving forward")
 
+    def _shipping(self):
+        print("Truck is shipping cargo")
+
+
 
 class RacingTruck(Truck):
     def __init__(self, color: str, engine_volume: int, wheels: int,
@@ -45,12 +49,15 @@ class RacingTruck(Truck):
         print("Truck is in racing")
 
 
+
+
 if __name__ == '__main__':
     Volvo_truck = Truck("silver", 5000, 12, "Volvo", 70, 3, 500, 15)
     print(Volvo_truck.color)
     print(Volvo_truck.speed)
     print(Volvo_truck.power)
     Volvo_truck.drive_forward()
+    Volvo_truck._shipping()
 
     Racing_Volvo = RacingTruck("red", 2000, 12, "Volvo", 250, 1, 1500, 5, 1200)
     print(Racing_Volvo.color, Racing_Volvo.engine_volume)
