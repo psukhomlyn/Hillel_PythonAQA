@@ -16,4 +16,3 @@ def week_ago_date():
 
 
 print(week_ago_date())
-
